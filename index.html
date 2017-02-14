@@ -1,16 +1,31 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
+<!--
+  * Please see the included README.md file for license terms and conditions.
+  -->
 <head>
-	<meta charset="UTF-8">
+    <title>Little Zebra Foundation</title>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+
+   <meta charset="UTF-8">
 	<meta name="description" content="Little Zebra - Test for Infomentum" />
 	<meta name="keywords" content="Little Zebra" />
-	<meta name="author" content="Diego Maeoka" />
+	<meta name="author" content="Hichem" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Little Zebra - Test for Infomentum</title>
 	<link rel="shortcut icon" href="images/favicon.ico">
-	<!-- =========================
-	 STYLESHEETS
-	============================== -->
+	
+
+	<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,800" rel="stylesheet">
+    
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=no">
+    <style>
+        
+        @-ms-viewport { width: 100vw ; min-zoom: 100% ; zoom: 100% ; }  @viewport { width: 100vw ; min-zoom: 100% zoom: 100% ; }
+        @-ms-viewport { user-zoom: fixed ; min-zoom: 100% ; }           @viewport { user-zoom: fixed ; min-zoom: 100% ; }
+    </style>
+    
+    <link rel="shortcut icon" href="images/favicon.ico">
+	
 	<!--build:css css/styles.min.css-->
 	<link rel="stylesheet" href="css/animate.min.css">
 	<link rel="stylesheet" href="css/font-awesome.css">
@@ -20,23 +35,15 @@
 		
 	<!-- WEBFONT -->
 	<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,800" rel="stylesheet">
-
-	<!--[if lt IE 9]>
-		<script src="js/html5shiv.min.js"></script>
-		<script src="js/respond.min.js"></script>
-	<![endif]-->
+ 
+   
 </head>
 
 <body>
-	<!-- =========================
-	PRE LOADER	   
-	============================== -->
 	<div class="preloader">
 		<div class="status">&nbsp;</div>
 	</div>
-	<!-- =========================
-	HOME SECTION	   
-	============================== -->
+	
 	<header id="home" class="header">
 		<!-- TOP BAR -->
 		<div id="header-bar"></div>
@@ -50,7 +57,8 @@
 						<span class="icon-bar"></span>
 					</button>
 					<div class="navbar-brand">
-						<a href="#"><img src="images/logo-little-zebra.svg" alt="Zerif"></a>
+			<a href="#"><img src="images/logo-little-zebra.svg" alt="Logo">
+            </a>
 					</div>
 				</div>
 				<nav class="navbar-collapse collapse" role="navigation" id="navbar-collapse">
@@ -110,7 +118,7 @@
 										</label>
 									</div>
 									<label for="donation_value">or</label>
-									<input class="form-control input-lg" id="donation_value" type="number" name="donation_value" min="11" max="999999999" step="1" required oninvalid="this.setCustomValidity('Please, select a value on the left, or type a donation value greater than &pound;11! Thanks!')">
+									<input class="form-control input-lg" id="donation_value" type="integer" name="donation_value" min="11" max="999" step="1" required oninvalid="this.setCustomValidity('Please, select a value on the left, or type a donation value greater than &pound;11! Thanks!')">
 								</div>
 								<span class="lz-checkbox">
 									<input type="checkbox" id="monthly" name="monthly" value="yes">
@@ -194,19 +202,20 @@
 				</p>
 			</div>
 		</div>
-		<!-- / END CONTAINER -->
+		
 	</footer>
-	<!-- / END FOOOTER  -->
-	<!-- SCRIPTS -->
 	
-	<!--build:js js/main.min.js -->
+	<!-- SCRIPTS -->
+    
+        <!--build:js js/main.min.js -->
 	<script type="text/javascript" src="js/jquery.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/wow.min.js"></script>
 	<script type="text/javascript" src="js/jquery.nav.js"></script>		
 	<script type="text/javascript" src="js/smoothscroll.js"></script>	
 	<script type="text/javascript" src="js/little-zebra.js"></script>
-	<!-- endbuild -->
-</body>
+    <script src="js/bootstrap.min.js"></script>
+	
 
+</body>
 </html>
