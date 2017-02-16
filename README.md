@@ -1,4 +1,5 @@
-Blank HTML Template for Building Packaged Mobile Web Apps
+HTML Template for Building Packaged Mobile Web Apps
+Little Zebra Project !
 =========================================================
 
 Copyright © 2012-2015, Intel Corporation. All rights reserved.
